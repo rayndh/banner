@@ -67,3 +67,9 @@
     background: url("xxxx.gif");
     background-size: cover;
 }
+#about{
+    margin-top: -1px;
+    width: 375px;
+    height: 150px;
+    background:url("about.png") no-repeat 0px -60px;
+}
