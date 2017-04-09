@@ -13,16 +13,20 @@
 
 #banner_main .click{
     position: absolute;
-    background-color: rgba(0,0,0,0.5);
-    width: 25px;
-    height: 35px;
-    color: white;
-    top: 83px;
+    top: 98px;
     opacity: 0;
     text-align: center;
-    line-height: 35px;
-    font-size: 18px;
+    font-size: 12px;
     cursor: pointer;
+    width: 40px;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgba(255, 98, 76, 0.7);
+    float: left;
+    color: white;
+    font-weight: bold;
+    border-radius: 40px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.8);
 }
 #banner_main:hover .click{
     opacity: 1;
@@ -59,7 +63,7 @@
 #bcd{
     width: 375px;
     height: 235px;
-    margin-top:-50px;
+    margin-top: -35px;
     background: url("xxxx.gif");
     background-size: cover;
 }
