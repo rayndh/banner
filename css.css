@@ -59,6 +59,7 @@
 #bcd{
     width: 375px;
     height: 235px;
+    margin-top:-50px;
     background: url("xxxx.gif");
     background-size: cover;
 }
