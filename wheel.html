@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Banner</title>
+    <link rel="stylesheet" href="css.css" type="text/css">
+
+</head>
+<body>
+      <div id="banner_main">
+          <div class="nav nav1"><img src="life1.png"></div>
+          <div class="nav"><img src="life2.png"></div>
+          <div class="nav"><img src="life3.png"></div>
+          <div class="nav"><img src="life4.png"></div>
+          <div class="click left">&lt;</div>
+          <div class="click right">&gt;</div>
+          <div id="number">
+              <div class="num bg"></div>
+              <div class="num"></div>
+              <div class="num"></div>
+              <div class="num"></div>
+          </div>
+      </div>
+      <div id="bcd"></div>
+      <script src="jquery-3.2.0.js"></script>
+      <script>
+          $(document).ready(function () {
+              timer();
+          });
+          var i =0;
+          var timeout;
+          function timer() {
+              timeout=setInterval(function () {
+                  i++;
+                  if(i>3){
+                      i=0;
+                  }
+                  showPic()
+              },4000);
+          }
+            function showPic() {
+                $(".nav").eq(i).fadeIn(500).siblings(".nav").fadeOut(500);
+                $(".num").eq(i).addClass("bg").siblings().removeClass("bg");
+            }
+
+          $(".num").hover(function () {
+              clearInterval(timeout);
+              i=$(this).index();
+              showPic();
+          },function () {
+              timer();
+          });
+
+       $(".left").click(function () {
+           clearInterval(timeout);
+           if (i==0){
+               i=4;
+           }
+           i--;
+           showPic();
+           timer();
+       })
+          $(".right").click(function () {
+              clearInterval(timeout);
+              if (i==3){
+                  i=-1;
+              }
+              i++;
+              showPic();
+              timer();
+          })
+      </script>
+</body>
+</html>

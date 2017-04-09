@@ -1,0 +1,64 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#banner_main{
+    position: relative;
+    width: 375px;
+    height: 235px;
+}
+#banner_main .nav{
+    position: absolute;
+}
+
+#banner_main .click{
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    width: 25px;
+    height: 35px;
+    color: white;
+    top: 83px;
+    opacity: 0;
+    text-align: center;
+    line-height: 35px;
+    font-size: 18px;
+    cursor: pointer;
+}
+#banner_main:hover .click{
+    opacity: 1;
+}
+#banner_main .left{
+    left:0px;
+}
+#banner_main .right{
+    right:0px;
+}
+
+#number{
+     position: absolute;
+     width: 200px;
+     height: 30px;
+     bottom: -5px;
+     left: 150px;
+}
+#number .num{
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    background-color: gray;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 10px;
+    font-size: 3px;
+    cursor: pointer;
+}
+#number .bg{
+    background-color: red;
+}
+#bcd{
+    width: 375px;
+    height: 300px;
+    background: url("xxxx.gif");
+    background-size: cover;
+}
