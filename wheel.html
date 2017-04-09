@@ -9,14 +9,14 @@
 
 </head>
 <body>
-     <div id="bcd"></div>
+<div id="bcd"></div>
       <div id="banner_main">
           <div class="nav nav1"><img src="life1.png"></div>
           <div class="nav"><img src="life2.png"></div>
           <div class="nav"><img src="life3.png"></div>
           <div class="nav"><img src="life4.png"></div>
-          <div class="click left">&lt;</div>
-          <div class="click right">&gt;</div>
+          <div class="click left">&lt;Left</div>
+          <div class="click right">Right&gt;</div>
           <div id="number">
               <div class="num bg"></div>
               <div class="num"></div>
@@ -24,7 +24,8 @@
               <div class="num"></div>
           </div>
       </div>
-     
+
+
       <script src="jquery-3.2.0.js"></script>
       <script>
           $(document).ready(function () {
@@ -62,7 +63,7 @@
            i--;
            showPic();
            timer();
-       })
+       });
           $(".right").click(function () {
               clearInterval(timeout);
               if (i==3){
@@ -71,7 +72,8 @@
               i++;
               showPic();
               timer();
-          })
+          });
+
       </script>
 </body>
 </html>
